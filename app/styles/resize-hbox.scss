@@ -5,6 +5,38 @@ $screen-xs-min: 400px;
 
 &.resize-hbox {
     height: 100%;
+
+    .split-pane {
+        cursor: ew-resize;
+        width:10px;
+        margin-right: -15px;
+        height: 100%;
+        float: right;
+        text-align: center;
+        display: table;
+        background-color: #000;
+        > span {
+            vertical-align: middle;
+            margin-left: 10px;
+            top: 50%;
+            position: fixed;
+            transform: rotate(90deg);
+            /* Safari */
+            -webkit-transform: rotate(90deg);
+
+            /* Firefox */
+            -moz-transform: rotate(90deg);
+
+            /* IE */
+            -ms-transform: rotate(90deg);
+
+            /* Opera */
+            -o-transform: rotate(90deg);
+
+            transform-origin: left top 0;
+        }
+    }
+
     .left-container {
         width: 50%;
         height: 100%;
