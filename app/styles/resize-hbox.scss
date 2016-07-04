@@ -1,0 +1,24 @@
+$screen-lg-min: 1200px;
+$screen-md-min: 992px;
+$screen-sm-min: 768px;
+$screen-xs-min: 400px;
+
+&.resize-hbox {
+    height: 100%;
+    .left-container {
+        width: 50%;
+        height: 100%;
+        background-color: red;
+        position: fixed;
+        left: 0;
+    }
+
+    .right-container {
+        width: 50%;
+        height: 100%;
+        background-color: green;
+        position: fixed;
+        right: 0;
+        margin-top: -1px;
+    }
+}

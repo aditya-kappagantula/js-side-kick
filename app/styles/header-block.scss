@@ -1,0 +1,104 @@
+$screen-lg-min: 1200px;
+$screen-md-min: 992px;
+$screen-sm-min: 768px;
+$screen-xs-min: 400px;
+
+&.header-block {
+    .icon{
+        margin: 0 5 0 5;
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+    }
+
+    .icon:hover {
+        -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+        -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+        box-sizing: border-box;
+        border: 3px dashed white;
+        border-radius: 50%;
+    }
+
+    .typed-cursor {
+        opacity: 1;
+        -webkit-animation: blink 0.7s infinite;
+        -moz-animation: blink 0.7s infinite;
+        animation: blink 0.7s infinite;
+    }
+
+    @keyframes blink {
+        0% { opacity:1; }
+        50% { opacity:0; }
+        100% { opacity:1; }
+    }
+
+    @-webkit-keyframes blink {
+        0% { opacity:1; }
+        50% { opacity:0; }
+        100% { opacity:1; }
+    }
+
+    @-moz-keyframes blink {
+        0% { opacity:1; }
+        50% { opacity:0; }
+        100% { opacity:1; }
+    }
+}
+
+/* Extra small devices (mobiles, 600px and up) */
+@media (min-width: $screen-xs-min) {
+    &.header-block {
+        .icon-alignment {
+            text-align: center;
+        }
+
+        .title-text {
+            text-align: center;
+        }
+    }
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: $screen-sm-min) {
+    &.header-block {
+        .icon-alignment {
+            text-align: center;
+        }
+
+        .title-text {
+            text-align: center;
+        }
+    }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: $screen-md-min) {
+    &.header-block {
+        .icon-alignment {
+            text-align: right;
+            right: 10px;
+            margin-top: 10px;
+        }
+    }
+}
+
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: $screen-lg-min) {
+    .container {
+        max-width: 1200px;
+    }
+
+    &.header-block {
+        .icon-alignment {
+            text-align: right;
+            right: 10px;
+            margin-top: 10px;
+        }
+
+        .title-text {
+            left: 10px;
+            text-align: left;
+        }
+    }
+}
